@@ -1,3 +1,4 @@
+# This is the workflow
 name: Hello
 
 # Runs on a trigger
@@ -8,14 +9,14 @@ on:
 # Jobs inside the workflow
 jobs:
 
-  # Name of the job
+  # This is the name of the job
   greet:
     # GitHub runner
     runs-on: ubuntu-latest
 
     steps:
-      - name: Say hello to users
-        run: echo "Hello world, this is Vaibhavi"
+      - name: say hello to users
+        run: echo "Hello world This is vaibhavi"
 
-      - name: Say hello to username
+      - name: say hello to username
         run: echo "Hello $USER"
