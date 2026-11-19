@@ -1,5 +1,5 @@
 #this is the name of workflow that will be displayed in the actions tab
-name: CICD
+name: practice2
 
 on:
   workflow_dispatch:
