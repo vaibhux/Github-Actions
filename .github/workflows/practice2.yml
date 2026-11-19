@@ -6,24 +6,28 @@ on:
 
 jobs:
   code:
+    runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        step: echo "Code Clone from github"
+        run: echo "Code Clone from github"
 
   build:
+    runs-on: ubuntu-latest
     steps:
       - name: Build Docker Constainer
-        steps: echo "Dicker Container build"
+        run: echo "Dicker Container build"
 
   test:
+    runs-on: ubuntu-latest
     steps:
       - name: Test the Docker container
-       steps: echo "Testing docker container creation"
+       run: echo "Testing docker container creation"
        
   deploy:
+    runs-on: ubuntu-latest
     steps:
      - name: Deploy the container
-       steps: echo "Deploying the container in CICD"
+       run: echo "Deploying the container in CICD"
   
 
 
