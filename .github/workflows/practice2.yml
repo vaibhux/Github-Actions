@@ -1,4 +1,4 @@
-#this is the name of workflow that will be displayed in the actions tab
+# This is the name of workflow displayed in the Actions tab
 name: practice2
 
 on:
@@ -8,27 +8,23 @@ jobs:
   code:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout code
-        run: echo "Code Clone from github"
+      - name: Checkout code
+        run: echo "Code Clone from GitHub"
 
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Build Docker Constainer
-        run: echo "Dicker Container build"
+      - name: Build Docker Container
+        run: echo "Docker Container build"
 
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Test the Docker container
-       run: echo "Testing docker container creation"
-       
+        run: echo "Testing Docker container creation"
+
   deploy:
     runs-on: ubuntu-latest
     steps:
-     - name: Deploy the container
-       run: echo "Deploying the container in CICD"
-  
-
-
-
+      - name: Deploy the container
+        run: echo "Deploying the container in CICD"
